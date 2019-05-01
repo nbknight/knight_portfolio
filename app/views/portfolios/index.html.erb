@@ -1,4 +1,4 @@
-<h1>Portfolio Items</h1>
+<h3>Portfolio Items</h3>
 
 
 <!-- This can take a sub domain -->
@@ -6,7 +6,7 @@
 
 
 <!-- This is the relative path -->
-<%= link_to "Create New Item", new_portfolio_path %>
+<%= link_to "New Portfolio", new_portfolio_path %>
 
 
 
@@ -16,6 +16,6 @@
   <p><%= pi.body  %></p>
   <%= image_tag pi.thumb_image unless pi.thumb_image.nil? %>
   <%= link_to "Edit", edit_portfolio_path(pi)  %>
-  <%= link_to 'Delete Item', portfolio_path(pi), method: :delete, data: { confirm: 'Are you sure?' } %>
+  <%= link_to 'Delete Item', portfolio_path(pi), method: :delete, data: { confirm: 'Is this really what you want..... really?' } %>
   
 <% end %>
